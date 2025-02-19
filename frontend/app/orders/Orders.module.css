@@ -1,0 +1,155 @@
+.ordersPage {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fa6161, #fffcfc);
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+}
+
+.ordersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ordersHeader h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.createOrderBtn {
+  background-color: #fa6161;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.createOrderBtn:hover {
+  background-color: #e54141;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loadingSpinner {
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.retryButton {
+  background-color: #fa6161;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.retryButton:hover {
+  background-color: #e54141;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.emptyState p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.adminSection {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adminSection h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.adminActions {
+  display: flex;
+  gap: 12px;
+}
+
+.adminButton {
+  background-color: #fa6161;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.adminButton:hover {
+  background-color: #e54141;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+    padding: 20px 10px;
+  }
+
+  .ordersHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .adminActions {
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,72 @@
+.invoiceDetailsPage {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fa6161, #fffcfc);
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.invoiceDetails {
+  
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.invoiceDetails p {
+  margin-bottom: 10px;
+}
+
+.pending {
+  background-color: #fff0c2;
+  color: #a68b00;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.paid {
+  background-color: #d1f7c4;
+  color: #2e7d32;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.markAsPaidButton {
+  background-color: #fa6161;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.markAsPaidButton:hover {
+  background-color: #e54141;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+    padding: 20px 10px;
+  }
+}
+

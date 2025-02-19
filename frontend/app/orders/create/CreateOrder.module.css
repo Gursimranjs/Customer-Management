@@ -1,0 +1,252 @@
+.createOrderPage {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fa6161, #fffcfc);
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+}
+
+.step.active {
+  color: #4b0c0c;
+}
+
+.stepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  color: #666;
+  border: 1px solid #e0e0e0;
+}
+
+.step.active .stepIcon {
+  background-color: #fa6161;
+  color: black;
+  border: none;
+}
+
+.stepDivider {
+  flex-grow: 0;
+  width: 60px;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0 16px;
+}
+
+.formSection {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+}
+
+.itemsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.itemsHeader h2 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.itemCard {
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.itemHeader h3 {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.itemGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.dimensionsGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.button {
+  background-color: #fa6161;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e54141;
+}
+
+.addItemButton,
+.submitButton,
+.backButton,
+.continueButton {
+  composes: button;
+}
+
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.reviewGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviewGroup h3 {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.reviewItem {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.reviewItem span {
+  font-weight: 500;
+  color: #666;
+  min-width: 140px;
+}
+
+.reviewItem p {
+  color: #333;
+  margin: 0;
+}
+
+.createOrderForm,
+.itemCard,
+.card {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .stepDivider {
+    width: 1px;
+    height: 24px;
+    margin: 8px 0;
+  }
+
+  .itemGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dimensionsGroup {
+    grid-template-columns: 1fr;
+  }
+
+  .reviewItem {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .reviewItem span {
+    min-width: auto;
+  }
+}
+

@@ -1,0 +1,19 @@
+.generateButton {
+  background-color: #fa6161;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generateButton:hover {
+  background-color: #e54141;
+}
+
+.generateButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+

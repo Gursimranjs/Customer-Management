@@ -1,0 +1,92 @@
+.inventoryListContainer {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.inventoryTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventoryTable th,
+.inventoryTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.inventoryTable th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.inventoryTable tr:hover {
+  background-color: #f5f5f5;
+}
+
+.deleteButton {
+  background-color: #fa6161;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #e54141;
+}
+
+@media (max-width: 768px) {
+  .inventoryTable,
+  .inventoryTable thead,
+  .inventoryTable tbody,
+  .inventoryTable th,
+  .inventoryTable td,
+  .inventoryTable tr {
+    display: block;
+  }
+
+  .inventoryTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .inventoryTable tr {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 10px;
+  }
+
+  .inventoryTable td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .inventoryTable td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
+

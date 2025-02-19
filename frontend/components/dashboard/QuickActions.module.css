@@ -1,0 +1,59 @@
+.quickActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fa6161;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.actionButton:first-child {
+  margin-left: 0;
+}
+
+.actionButton:last-child {
+  margin-right: 0;
+}
+
+.actionButton:hover {
+  background-color: #e54141;
+}
+
+.actionButton svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .quickActions {
+    flex-direction: column;
+  }
+
+  .actionButton {
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .actionButton:first-child {
+    margin-top: 0;
+  }
+
+  .actionButton:last-child {
+    margin-bottom: 0;
+  }
+}
+

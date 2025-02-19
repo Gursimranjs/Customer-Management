@@ -1,0 +1,75 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.labelContent {
+  margin-bottom: 20px;
+}
+
+.labelContent p {
+  margin-bottom: 10px;
+}
+
+.barcode {
+  font-family: "Libre Barcode 39", cursive;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalActions button {
+  background-color: #fa6161;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalActions button:hover {
+  background-color: #e54141;
+}
+
+.modalActions button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.closeButton {
+  background-color: #cccccc !important;
+  color: #333 !important;
+}
+
+.closeButton:hover {
+  background-color: #b3b3b3 !important;
+}
+

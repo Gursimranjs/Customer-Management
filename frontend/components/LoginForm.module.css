@@ -1,0 +1,135 @@
+/* Centering the form container */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #fa6161, #fffcfc);
+    padding: 16px;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Login Form Card */
+  .login-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: white;
+    
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    color:black;
+  }
+  .login-card-2 {
+    width: 100%;
+    max-width: 480px;
+    background-color: tr;
+    border-radius: 12px;
+    padding: 24px;
+  
+    transition: all 0.3s ease-in-out;
+    color:black;
+  }
+  
+  /* Title & Description */
+  .login-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .login-description {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Input Fields */
+  .input-field {
+    height: 48px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+    color: rgb(10, 10, 10);
+    background-color: #ffffff;
+  }
+  
+  .input-field:focus {
+    border-color: #dc2626;
+    outline: none;
+  }
+  
+  /* Password Field Container */
+  .password-container {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .password-toggle:hover {
+    color: #111827;
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #dc2626;
+    text-decoration: none;
+    padding: 7px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+    
+  }
+  
+  /* Sign In Button */
+  .login-button {
+    width: 100%;
+    background-color: rgb(240, 82, 82);
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+   
+  }
+  
+  .login-button:hover {
+    background-color: #c93939;
+    border-color: #9d0208;
+  }
+  
+  /* Error Message */
+  .error-message {
+    background-color: rgba(239, 68, 68, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #dc2626;
+    text-align: center;
+  }
+  

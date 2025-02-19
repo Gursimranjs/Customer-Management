@@ -1,0 +1,83 @@
+.recentOrdersTable {
+  /* Container styling for the orders table */
+  margin-top: 20px;
+}
+
+/* Table Header & Search Bar */
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchBar input {
+  height: 32px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────────
+   SCOPE PREVIOUS GLOBAL SELECTORS 
+   UNDER .recentOrdersTable 
+   (Only scoping changed, styling is the same)
+─────────────────────────────────────────────── */
+.recentOrdersTable table {
+  /* Your original table styling */
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff; /* originally white background? */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  color: black;
+}
+
+.recentOrdersTable th,
+.recentOrdersTable td {
+  /* Original td/th styling */
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.recentOrdersTable th {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+/* Highlight row if status is "In Transit" */
+.inTransit {
+  background-color: rgba(255, 229, 229, 0.5);
+}
+
+/* View Button (unchanged) */
+.viewButton {
+  background-color: #dc2626; /* original red */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.viewButton:hover {
+  background-color: #b91c1c; /* darker red on hover */
+}
+
+/* 'No Orders' message styling (unchanged) */
+.noOrders {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  padding: 10px 0;
+}

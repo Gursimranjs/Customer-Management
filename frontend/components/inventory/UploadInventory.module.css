@@ -1,0 +1,38 @@
+.uploadContainer {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.instructions {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.downloadLink {
+  color: #fa6161;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.downloadLink:hover {
+  color: #e54141;
+}
+
+.errorMessage {
+  color: #fa6161;
+  margin-top: 10px;
+}
+

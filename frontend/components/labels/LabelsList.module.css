@@ -1,0 +1,115 @@
+.labelsListContainer {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tableWrapper {
+  margin-bottom: 30px;
+}
+
+.tableTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.labelsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.labelsTable th,
+.labelsTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.labelsTable th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.labelsTable tr:hover {
+  background-color: #f5f5f5;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.pending {
+  background-color: #fff0c2;
+  color: #a68b00;
+}
+
+.intransit {
+  background-color: #c2e0ff;
+  color: #0066cc;
+}
+
+.delivered {
+  background-color: #d1f7c4;
+  color: #2e7d32;
+}
+
+.viewButton {
+  background-color: #fa6161;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.viewButton:hover {
+  background-color: #e54141;
+}
+
+@media (max-width: 768px) {
+  .labelsTable,
+  .labelsTable thead,
+  .labelsTable tbody,
+  .labelsTable th,
+  .labelsTable td,
+  .labelsTable tr {
+    display: block;
+  }
+
+  .labelsTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .labelsTable tr {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 10px;
+  }
+
+  .labelsTable td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .labelsTable td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
+
